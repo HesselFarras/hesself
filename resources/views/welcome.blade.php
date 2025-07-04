@@ -75,7 +75,6 @@
                 <div class="rounded-md shadow-md overflow-hidden">
                     <h3 class="font-semibold text-xl text-dark">{{$item->company_name}} |
                     <span class="font-semibold text-lg text-primary mb-2 text-cyan-600">{{$item->position}}
-
                     </span></h3>
                     <p class="font-semibold text-base text-secondary text-gray-600">
                     <span class="font-bold">{{$item->start_date}} - {{$item->end_date ?? "Present | "}}</span>
