@@ -261,10 +261,7 @@
             </div>
         </section>
 
-
-
-
-        <footer class="p-6 text-center text-gray-500 border-t border-gray-800">
+        <footer class="p-3 text-center text-gray-500 border-t border-gray-800">
             Made with ☕ using Laravel & TailwindCSS
         </footer>
     </main>
