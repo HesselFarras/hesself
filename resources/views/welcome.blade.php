@@ -1,6 +1,7 @@
 <head>
     <title>Hessel Farras</title>
     @vite('resources/css/app.css')
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { background-color: #121212; }
