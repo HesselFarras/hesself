@@ -74,7 +74,7 @@
             <p class="text-gray-300 leading-relaxed mt-4">
                 I’m interested in both front-end and back-end development because understanding the full workflow of a web application helps 
                 me create more complete and thoughtful solutions. I love turning ideas and designs into interactive applications that users 
-                enjoy. Beyond coding, I have a big passion for music—especially pop punk, Midwestern emo, hip-hop, and even dangdut. Music 
+                enjoy. Beyond coding, I have a big passion for music—especially pop punk, Midwestern emo, and even hiphop dangdut. Music 
                 sparks my creativity and often inspires the way I approach problem-solving and design, making my work more expressive and 
                 thoughtful.
             </p>
