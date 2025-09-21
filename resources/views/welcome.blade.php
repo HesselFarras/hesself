@@ -1,7 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Hessel Farras</title>
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { background-color: #121212; }
@@ -32,7 +34,6 @@
     <!-- ==== Sidebar ==== -->
     <aside id="sidebar"
     class="fixed top-0 left-0 w-64 md:w-64 h-screen bg-[#121212] flex flex-col border-r border-gray-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 pt-16 md:pt-0">
-        <!-- ↑ pt-16 memberi ruang agar teks tidak tertutup hamburger di mobile -->
         <a href="#photo" class="px-5 pb-5 text-2xl mt-8 font-bold text-emerald-500">Hello there👋</a>
 
         <nav class="flex-1 overflow-y-auto px-4 space-y-2">
@@ -50,11 +51,9 @@
 
     <!-- ==== Konten Utama ==== -->
     <main class="flex-1 md:ml-64 overflow-y-auto transition-all duration-300">
-        <!-- Header ala playlist -->
+        <!-- Header -->
         <header id="photo" class="header-gradient p-6 md:p-10 flex flex-col md:flex-row items-center md:items-end gap-6">
-            <img src="images/aku.jpg"
-                alt="Profile Photo"
-                class="w-40 h-40 md:w-56 md:h-56 object-cover rounded shadow-lg">
+            <img src="{{ asset('images/aku.jpg') }}" alt="Profile Photo" class="w-40 h-40 md:w-56 md:h-56 object-cover rounded shadow-lg">
             <div>
                 <p class="uppercase text-sm text-gray-300 mb-2">Public Profile</p>
                 <h1 class="text-4xl md:text-6xl font-extrabold">Hessel Farras Abiyyu</h1>
@@ -62,7 +61,7 @@
             </div>
         </header>
 
-        <!-- ===== About ===== -->
+        <!-- About -->
         <section id="about" class="px-6 md:px-10 py-8 max-w-[80%]">
             <h2 class="text-xl font-bold mb-4 text-emerald-400">About Me</h2>
             <p class="text-gray-300 leading-relaxed">
@@ -90,63 +89,44 @@
             </p>
         </section>
 
-        <!-- ===== Projects ===== -->
+        <!-- Projects -->
         <section id="projects" class="px-6 md:px-10 py-8 border-t border-gray-800">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-bold text-emerald-400">Projects</h2>
             </div>
 
-            <!-- Grid Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
-                <div class="group cursor-pointer"
-                    onclick="openModal('/images/travelin.png','Travelin')">
+                <div class="group cursor-pointer" onclick="openModal('{{ asset('images/travelin.png') }}','Travelin')">
                     <div class="relative">
-                        <img src="/images/travelin.png" alt="Travelin"
-                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                        <img src="{{ asset('images/travelin.png') }}" alt="Travelin" class="rounded-md shadow-md w-full aspect-video object-cover">
                     </div>
                     <h3 class="mt-3 font-semibold text-white truncate">Travelin</h3>
                     <p class="text-sm text-gray-400">2024</p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="group cursor-pointer"
-                    onclick="openModal('/images/letris.png','Laravel + Filament Dashboard')">
+                <div class="group cursor-pointer" onclick="openModal('{{ asset('images/letris.png') }}','Laravel + Filament Dashboard')">
                     <div class="relative">
-                        <img src="/images/letris.png" alt="Laravel + Filament Dashboard"
-                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                        <img src="{{ asset('images/letris.png') }}" alt="Laravel + Filament Dashboard" class="rounded-md shadow-md w-full aspect-video object-cover">
                     </div>
                     <h3 class="mt-3 font-semibold text-white truncate">SMK LETRIS INDONESIA 2</h3>
                     <p class="text-sm text-gray-400">2025</p>
                 </div>
             </div>
 
-            <!-- ===== Modal Popup ===== -->
-            <div id="imgModal"class="fixed inset-0 hidden bg-black/80 flex items-center justify-center z-50">
+            <!-- Modal -->
+            <div id="imgModal" class="fixed inset-0 hidden bg-black/80 flex items-center justify-center z-50">
                 <div class="relative max-w-4xl w-[90%]">
-                    <!-- tombol close -->
-                    <button onclick="closeModal()"
-                            class="absolute -top-6 -right-6 text-white text-3xl font-bold hover:text-emerald-400">
-                        &times;
-                    </button>
-                    <!-- gambar besar -->
-                    <img id="modalImage"
-                        src=""
-                        alt="Preview"
-                        class="rounded-lg shadow-xl w-full h-auto">
-                    <!-- caption -->
-                    <p id="modalCaption"
-                    class="mt-3 text-center text-gray-300"></p>
+                    <button onclick="closeModal()" class="absolute -top-6 -right-6 text-white text-3xl font-bold hover:text-emerald-400">&times;</button>
+                    <img id="modalImage" src="" alt="Preview" class="rounded-lg shadow-xl w-full h-auto">
+                    <p id="modalCaption" class="mt-3 text-center text-gray-300"></p>
                 </div>
             </div>
         </section>
 
-        <!-- ===== Experience ===== -->
+        <!-- Experience -->
         <section id="experience" class="px-6 md:px-10 py-8 border-t border-gray-800">
             <h2 class="text-xl font-bold mb-6 text-emerald-400">Experiences</h2>
-
             <div class="relative pl-6 border-l-2 border-emerald-400 space-y-10">
-                <!-- Experience 1 -->
                 <div class="relative">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div>
@@ -161,7 +141,6 @@
                     </div>
                 </div>
 
-                <!-- Experience 2 -->
                 <div class="relative">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div>
@@ -178,39 +157,40 @@
             </div>
         </section>
 
-        <!-- ===== Skills ===== -->
+        <!-- Skills -->
         <section id="skills" class="px-6 md:px-10 py-8 border-t border-gray-800">
             <h2 class="text-xl font-bold mb-4 text-emerald-400">Skills</h2>
             <div class="flex flex-wrap gap-3">
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/laravel.png" alt="Laravel" class="w-5 h-5"> Laravel
+                    <img src="{{ asset('images/laravel.png') }}" alt="Laravel" class="w-5 h-5"> Laravel
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/tailwind CSS.png" alt="TailwindCSS" class="w-5 h-5"> TailwindCSS
+                    <img src="{{ asset('images/tailwind CSS.png') }}" alt="TailwindCSS" class="w-5 h-5"> TailwindCSS
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/js.png" alt="JavaScript" class="w-5 h-5"> JavaScript
+                    <img src="{{ asset('images/js.png') }}" alt="JavaScript" class="w-5 h-5"> JavaScript
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/react.png" alt="React" class="w-5 h-5"> React
+                    <img src="{{ asset('images/react.png') }}" alt="React" class="w-5 h-5"> React
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/node.js.png" alt="NodeJs" class="w-5 h-5"> Node.js
+                    <img src="{{ asset('images/node.js.png') }}" alt="NodeJs" class="w-5 h-5"> Node.js
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/php.png" alt="PHP" class="w-5 h-5"> PHP
+                    <img src="{{ asset('images/php.png') }}" alt="PHP" class="w-5 h-5"> PHP
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/python.png" alt="Python" class="w-5 h-5"> Python
+                    <img src="{{ asset('images/python.png') }}" alt="Python" class="w-5 h-5"> Python
                 </span>
             </div>
         </section>
 
-        <!-- ===== Contact ===== -->
+        <!-- Contact -->
         <section id="contact" class="px-6 md:px-10 py-8 border-t border-gray-800 flex flex-wrap justify-center gap-8">
-            <!-- Email -->
+            <!-- Gmail -->
             <div class="flex flex-col items-center">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hesselfarras1@gmail.com" class="text-emerald-400 hover:text-emerald-300">
+                    <!-- Gmail icon SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 512 512" fill="currentColor">
                         <path d="M502.3 190.8L327.4 314.7c-18.8 13.7-45.3 13.7-64.1 0L9.7 190.8C3.9 186.2 0 179 0 171.4V80c0-17.7 14.3-32 32-32h448c17.7 0 32 14.3 32 32v91.4c0 7.6-3.9 14.8-9.7 19.4z"/>
                         <path d="M256 338.7L502.3 190.8c5.8-4.6 9.7-11.8 9.7-19.4V384c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V171.4c0 7.6 3.9 14.8 9.7 19.4L256 338.7z"/>
@@ -218,7 +198,6 @@
                 </a>
                 <span class="mt-2 text-emerald-400 text-sm">Gmail</span>
             </div>
-
 
             <!-- GitHub -->
             <div class="flex flex-col items-center">
@@ -229,40 +208,7 @@
                 </a>
                 <span class="mt-2 text-emerald-400 text-sm">GitHub</span>
             </div>
-
-            <!-- Instagram -->
-            <div class="flex flex-col items-center">
-                <a href="https://instagram.com/hesselfarras" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.678 3.5 4 5.178 4 7.25v8.5C4 18.322 5.678 20 7.75 20h8.5c2.072 0 3.75-1.678 3.75-3.75v-8.5C20 5.678 18.322 3.5 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">Instagram</span>
-            </div>
-
-            <!-- LinkedIn -->
-            <div class="flex flex-col items-center">
-                <a href="https://www.linkedin.com/in/hessel-farras-abiyyu-079381332" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5 7.95 8.16 7.95 6.5 6.62 3.5 4.98 3.5zM2.4 21.5h5.15V10.5H2.4v11zM9.4 10.5v11h5.14v-5.9c0-3.13-4-2.88-4 0v5.9h5.14V14.5c0-4.94-5.58-4.76-5.58 0v7h-5.12V10.5h5.12z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">LinkedIn</span>
-            </div>
-
-            <!-- Spotify -->
-            <div class="flex flex-col items-center">
-                <a href="https://open.spotify.com/user/pcc3w9979nlybqkvmi45t2g08" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm5.473 17.68c-.225.34-.642.445-.982.22-2.7-1.8-6.09-2.21-10.08-1.21-.39.107-.8-.123-.907-.513-.107-.39.123-.8.513-.907 4.23-1.15 7.92-.66 10.89 1.32.34.225.445.642.22.982zm1.417-3.74c-.28.43-.873.565-1.304.285-3.09-1.99-7.79-2.57-11.44-1.41-.48.147-.99-.144-1.137-.624-.147-.48.144-.99.624-1.137 4.09-1.27 9.2-.63 12.58 1.55.43.28.565.873.285 1.304zm.157-3.7c-3.54-2.14-9.36-2.33-12.86-1.28-.57.18-1.18-.15-1.36-.72-.18-.57.15-1.18.72-1.36 3.86-1.23 10.16-1 14.05 1.44.55.34.73 1.07.39 1.62-.34.55-1.07.73-1.62.39z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">Spotify</span>
-            </div>
         </section>
-
-
-
 
         <footer class="p-6 text-center text-gray-500 border-t border-gray-800">
             Made with ☕ using Laravel & TailwindCSS
@@ -271,67 +217,27 @@
 </div>
 
 <script>
-  // Highlight nav saat scroll
+// Highlight nav saat scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("aside nav a");
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
+        if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
     });
     navLinks.forEach(link => {
-    link.classList.remove("text-emerald-400");
-    if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("text-emerald-400");
-    }
+        link.classList.remove("text-emerald-400");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("text-emerald-400");
+        }
     });
 });
 
-  // Toggle sidebar + overlay
-    const menuBtn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
+// Toggle sidebar + overlay
+const menuBtn = document.getElementById('menuBtn');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
 
-    function openSidebar() {
+function openSidebar() {
     sidebar.classList.remove('-translate-x-full');
     overlay.classList.remove('pointer-events-none');
-    overlay.classList.add('opacity-100');
-    }
-    function closeSidebar() {
-    sidebar.classList.add('-translate-x-full');
-    overlay.classList.add('pointer-events-none');
-    overlay.classList.remove('opacity-100');
-    }
-
-    menuBtn.addEventListener('click', () => {
-    sidebar.classList.contains('-translate-x-full') ? openSidebar() : closeSidebar();
-    });
-    overlay.addEventListener('click', closeSidebar);
-
-    // buka modal
-    function openModal(src, caption) {
-        document.getElementById('imgModal').classList.remove('hidden');
-        document.getElementById('modalImage').src = src;
-        document.getElementById('modalCaption').textContent = caption || '';
-    }
-    // tutup modal
-    function closeModal() {
-        document.getElementById('imgModal').classList.add('hidden');
-    }
-    // klik area gelap untuk menutup
-    document.getElementById('imgModal').addEventListener('click', (e) => {
-        if (e.target.id === 'imgModal') closeModal();
-    });
-
-    document.querySelectorAll('aside nav a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        document.querySelector('main').scrollTo({
-        top: target.offsetTop,
-        behavior: 'smooth'
-        });
-    });
-    });
-
-</script>
