@@ -116,7 +116,7 @@
                         <img src="/images/letris.png" alt="Laravel + Filament Dashboard"
                             class="rounded-md shadow-md w-full aspect-video object-cover">
                     </div>
-                    <h3 class="mt-3 font-semibold text-white truncate">SMK LETRIS INDONESIA 2</h3>
+                    <h3 class="mt-3 font-semibold text-white truncate">SMK Letris Indonesia 2</h3>
                     <p class="text-sm text-gray-400">2025</p>
                 </div>
             </div>
