@@ -186,16 +186,16 @@
                     <img src="/images/laravel.png" alt="Laravel" class="w-5 h-5"> Laravel
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/tailwind CSS.png" alt="TailwindCSS" class="w-5 h-5"> TailwindCSS
+                    <img src="/images/Tailwind CSS.png" alt="TailwindCSS" class="w-5 h-5"> TailwindCSS
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
                     <img src="/images/js.png" alt="JavaScript" class="w-5 h-5"> JavaScript
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/react.png" alt="React" class="w-5 h-5"> React
+                    <img src="/images/React.png" alt="React" class="w-5 h-5"> React
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
-                    <img src="/images/node.js.png" alt="NodeJs" class="w-5 h-5"> Node.js
+                    <img src="/images/Node.js.png" alt="NodeJs" class="w-5 h-5"> Node.js
                 </span>
                 <span class="flex items-center gap-2 px-4 py-1 bg-emerald-500/20 border border-emerald-400 rounded-full">
                     <img src="/images/php.png" alt="PHP" class="w-5 h-5"> PHP
