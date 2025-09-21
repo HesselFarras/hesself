@@ -157,7 +157,7 @@
                                 <li>Designed and developed using Laravel, Filament, and TailwindCSS</li>
                             </ul>
                         </div>
-                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Oct 2025 – Jan 2025</span>
+                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Oct 2024 – Jan 2025</span>
                     </div>
                 </div>
 
@@ -172,7 +172,7 @@
                                 <li>Web projects using Laravel, Filament, and TailwindCSS.</li>
                             </ul>
                         </div>
-                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Mar – Jul 2025</span>
+                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Mar 2025 – Jul 2025</span>
                     </div>
                 </div>
             </div>
