@@ -157,7 +157,7 @@
                                 <li>Designed and developed using Laravel, Filament, and TailwindCSS</li>
                             </ul>
                         </div>
-                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Oct 2024 – Jan 2025</span>
+                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Oct 2025 – Jan 2025</span>
                     </div>
                 </div>
 
@@ -172,7 +172,7 @@
                                 <li>Web projects using Laravel, Filament, and TailwindCSS.</li>
                             </ul>
                         </div>
-                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Mar 2025 – Jul 2025</span>
+                        <span class="mt-2 md:mt-0 text-sm text-gray-400">Mar – Jul 2025</span>
                     </div>
                 </div>
             </div>
@@ -206,8 +206,48 @@
             </div>
         </section>
 
-        <!-- ===== Contact ===== -->
-        <section id="contact" class="px-6 md:px-10 py-8 border-t border-gray-800 flex flex-wrap justify-center gap-8">
+        <!-- ===== Contact & Message ===== -->
+<section id="contact" class="px-6 md:px-10 py-12 border-t border-gray-800">
+    <h2 class="text-xl font-bold mb-6 text-emerald-400 text-center">Get in Touch</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        
+        <!-- ===== Form Message (Kiri) ===== -->
+        <div>
+            <form action="mailto:hesselfarras1@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-gray-300 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-gray-300 mb-1">Your Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-gray-300 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-lg shadow-md transition">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- ===== Social Media (Kanan) ===== -->
+        <div class="flex flex-wrap justify-center gap-8 items-center">
             <!-- Email -->
             <div class="flex flex-col items-center">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hesselfarras1@gmail.com" class="text-emerald-400 hover:text-emerald-300">
@@ -218,7 +258,6 @@
                 </a>
                 <span class="mt-2 text-emerald-400 text-sm">Gmail</span>
             </div>
-
 
             <!-- GitHub -->
             <div class="flex flex-col items-center">
@@ -259,7 +298,9 @@
                 </a>
                 <span class="mt-2 text-emerald-400 text-sm">Spotify</span>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <footer class="p-3 text-center text-gray-500 border-t border-gray-800">
             Made with ☕ using Laravel & TailwindCSS
