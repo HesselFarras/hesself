@@ -40,6 +40,7 @@
             <a href="#projects" class="block px-3 py-2 rounded hover:bg-gray-800">Projects</a>
             <a href="#experience" class="block px-3 py-2 rounded hover:bg-gray-800">Experience</a>
             <a href="#skills" class="block px-3 py-2 rounded hover:bg-gray-800">Skills</a>
+            <a href="#certificates" class="block px-3 py-2 rounded hover:bg-gray-800">Certificates</a>
             <a href="#contact" class="block px-3 py-2 rounded hover:bg-gray-800">Contact</a>
         </nav>
 
@@ -206,101 +207,173 @@
             </div>
         </section>
 
+        <!-- ===== Certificates ===== -->
+        <section id="certificates" class="px-6 md:px-10 py-12 border-t border-gray-800">
+            <h2 class="text-xl font-bold mb-6 text-emerald-400">Certificates</h2>
+
+            <!-- Grid Sertifikat -->
+            <div id="certificateGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Sertifikat 1 -->
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti2.png','Fullstack Developer')">
+                    <div class="relative">
+                        <img src="/images/serti2.png" alt="Certificate 1"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Fullstack Developer</h3>
+                    <p class="text-sm text-gray-400">2024</p>
+                </div>
+
+                <!-- Sertifikat 2 -->
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti3.png','Flutter')">
+                    <div class="relative">
+                        <img src="/images/serti3.png" alt="Certificate 2"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Flutter</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
+                <!-- Sertifikat 3 -->
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti4.png','React & Tailwind Certificate')">
+                    <div class="relative">
+                        <img src="/images/serti4.png" alt="Certificate 3"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Dasar AI Engineering</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
+                <!-- Sertifikat 4 (Hidden Default) -->
+                <div class="group cursor-pointer hidden extra-cert opacity-0 translate-y-4 transition-all duration-700"
+                    onclick="openModal('/images/serti1.png','Kuliah umum bersama RedHat Indonesia')">
+                    <div class="relative">
+                        <img src="/images/serti1.png" alt="Certificate 4"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Kuliah umum bersama RedHat Indonesia</h3>
+                    <p class="text-sm text-gray-400">2024</p>
+                </div>
+
+
+                <!-- Sertifikat 5 (Hidden Default) -->
+                <!-- <div class="group cursor-pointer hidden extra-cert"
+                    onclick="openModal('/images/certificate5.png','Git & GitHub Certificate')">
+                    <div class="relative">
+                        <img src="/images/certificate5.png" alt="Certificate 5"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Git & GitHub</h3>
+                    <p class="text-sm text-gray-400">2024</p>
+                </div> -->
+            </div>
+
+            <!-- Tombol Show More -->
+            <div class="text-center mt-16">
+                <button id="showMoreBtn"
+                    class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-lg shadow-md transition">
+                    Show More
+                </button>
+            </div>
+        </section>
+
         <!-- ===== Contact & Message ===== -->
-<section id="contact" class="px-6 md:px-10 py-12 border-t border-gray-800">
-    <h2 class="text-xl font-bold mb-6 text-emerald-400 text-center">Get in Touch</h2>
+        <section id="contact" class="px-6 md:px-10 py-12 border-t border-gray-800">
+            <h2 class="text-xl font-bold mb-6 text-emerald-400 text-center">Get in Touch</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-        
-        <!-- ===== Form Message (Kiri) ===== -->
-        <div>
-            <form action="mailto:hesselfarras1@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
-                <!-- Name -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                
+                <!-- ===== Form Message (Kiri) ===== -->
                 <div>
-                    <label for="name" class="block text-gray-300 mb-1">Your Name</label>
-                    <input type="text" id="name" name="name" required
-                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                    <form action="mailto:hesselfarras1@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-1">Your Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="text-center">
+                            <button type="submit"
+                                class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-lg shadow-md transition">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
-                <!-- Email -->
-                <div>
-                    <label for="email" class="block text-gray-300 mb-1">Your Email</label>
-                    <input type="email" id="email" name="email" required
-                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500">
+                <!-- ===== Social Media (Kanan) ===== -->
+                <div class="flex flex-wrap justify-center gap-8 items-center">
+                    <!-- Email -->
+                    <div class="flex flex-col items-center">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hesselfarras1@gmail.com" class="text-emerald-400 hover:text-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 512 512" fill="currentColor">
+                                <path d="M502.3 190.8L327.4 314.7c-18.8 13.7-45.3 13.7-64.1 0L9.7 190.8C3.9 186.2 0 179 0 171.4V80c0-17.7 14.3-32 32-32h448c17.7 0 32 14.3 32 32v91.4c0 7.6-3.9 14.8-9.7 19.4z"/>
+                                <path d="M256 338.7L502.3 190.8c5.8-4.6 9.7-11.8 9.7-19.4V384c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V171.4c0 7.6 3.9 14.8 9.7 19.4L256 338.7z"/>
+                            </svg>
+                        </a>
+                        <span class="mt-2 text-emerald-400 text-sm">Gmail</span>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="flex flex-col items-center">
+                        <a href="https://github.com/HesselFarras" class="text-emerald-400 hover:text-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.652.243 2.873.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.623-5.48 5.922.43.37.815 1.096.815 2.21 0 1.595-.015 2.882-.015 3.27 0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <span class="mt-2 text-emerald-400 text-sm">GitHub</span>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="flex flex-col items-center">
+                        <a href="https://instagram.com/hesselfarras" class="text-emerald-400 hover:text-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.678 3.5 4 5.178 4 7.25v8.5C4 18.322 5.678 20 7.75 20h8.5c2.072 0 3.75-1.678 3.75-3.75v-8.5C20 5.678 18.322 3.5 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+                            </svg>
+                        </a>
+                        <span class="mt-2 text-emerald-400 text-sm">Instagram</span>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="flex flex-col items-center">
+                        <a href="https://www.linkedin.com/in/hessel-farras-abiyyu-079381332" class="text-emerald-400 hover:text-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5 7.95 8.16 7.95 6.5 6.62 3.5 4.98 3.5zM2.4 21.5h5.15V10.5H2.4v11zM9.4 10.5v11h5.14v-5.9c0-3.13-4-2.88-4 0v5.9h5.14V14.5c0-4.94-5.58-4.76-5.58 0v7h-5.12V10.5h5.12z"/>
+                            </svg>
+                        </a>
+                        <span class="mt-2 text-emerald-400 text-sm">LinkedIn</span>
+                    </div>
+
+                    <!-- Spotify -->
+                    <div class="flex flex-col items-center">
+                        <a href="https://open.spotify.com/user/pcc3w9979nlybqkvmi45t2g08" class="text-emerald-400 hover:text-emerald-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm5.473 17.68c-.225.34-.642.445-.982.22-2.7-1.8-6.09-2.21-10.08-1.21-.39.107-.8-.123-.907-.513-.107-.39.123-.8.513-.907 4.23-1.15 7.92-.66 10.89 1.32.34.225.445.642.22.982zm1.417-3.74c-.28.43-.873.565-1.304.285-3.09-1.99-7.79-2.57-11.44-1.41-.48.147-.99-.144-1.137-.624-.147-.48.144-.99.624-1.137 4.09-1.27 9.2-.63 12.58 1.55.43.28.565.873.285 1.304zm.157-3.7c-3.54-2.14-9.36-2.33-12.86-1.28-.57.18-1.18-.15-1.36-.72-.18-.57.15-1.18.72-1.36 3.86-1.23 10.16-1 14.05 1.44.55.34.73 1.07.39 1.62-.34.55-1.07.73-1.62.39z"/>
+                            </svg>
+                        </a>
+                        <span class="mt-2 text-emerald-400 text-sm">Spotify</span>
+                    </div>
                 </div>
-
-                <!-- Message -->
-                <div>
-                    <label for="message" class="block text-gray-300 mb-1">Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                        class="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:border-emerald-400 focus:ring focus:ring-emerald-400/30 text-gray-100 placeholder-gray-500"></textarea>
-                </div>
-
-                <!-- Submit -->
-                <div class="text-center">
-                    <button type="submit"
-                        class="px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold rounded-lg shadow-md transition">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-
-        <!-- ===== Social Media (Kanan) ===== -->
-        <div class="flex flex-wrap justify-center gap-8 items-center">
-            <!-- Email -->
-            <div class="flex flex-col items-center">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hesselfarras1@gmail.com" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 512 512" fill="currentColor">
-                        <path d="M502.3 190.8L327.4 314.7c-18.8 13.7-45.3 13.7-64.1 0L9.7 190.8C3.9 186.2 0 179 0 171.4V80c0-17.7 14.3-32 32-32h448c17.7 0 32 14.3 32 32v91.4c0 7.6-3.9 14.8-9.7 19.4z"/>
-                        <path d="M256 338.7L502.3 190.8c5.8-4.6 9.7-11.8 9.7-19.4V384c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V171.4c0 7.6 3.9 14.8 9.7 19.4L256 338.7z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">Gmail</span>
             </div>
-
-            <!-- GitHub -->
-            <div class="flex flex-col items-center">
-                <a href="https://github.com/HesselFarras" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.652.243 2.873.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.623-5.48 5.922.43.37.815 1.096.815 2.21 0 1.595-.015 2.882-.015 3.27 0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">GitHub</span>
-            </div>
-
-            <!-- Instagram -->
-            <div class="flex flex-col items-center">
-                <a href="https://instagram.com/hesselfarras" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.678 3.5 4 5.178 4 7.25v8.5C4 18.322 5.678 20 7.75 20h8.5c2.072 0 3.75-1.678 3.75-3.75v-8.5C20 5.678 18.322 3.5 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">Instagram</span>
-            </div>
-
-            <!-- LinkedIn -->
-            <div class="flex flex-col items-center">
-                <a href="https://www.linkedin.com/in/hessel-farras-abiyyu-079381332" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5 7.95 8.16 7.95 6.5 6.62 3.5 4.98 3.5zM2.4 21.5h5.15V10.5H2.4v11zM9.4 10.5v11h5.14v-5.9c0-3.13-4-2.88-4 0v5.9h5.14V14.5c0-4.94-5.58-4.76-5.58 0v7h-5.12V10.5h5.12z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">LinkedIn</span>
-            </div>
-
-            <!-- Spotify -->
-            <div class="flex flex-col items-center">
-                <a href="https://open.spotify.com/user/pcc3w9979nlybqkvmi45t2g08" class="text-emerald-400 hover:text-emerald-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm5.473 17.68c-.225.34-.642.445-.982.22-2.7-1.8-6.09-2.21-10.08-1.21-.39.107-.8-.123-.907-.513-.107-.39.123-.8.513-.907 4.23-1.15 7.92-.66 10.89 1.32.34.225.445.642.22.982zm1.417-3.74c-.28.43-.873.565-1.304.285-3.09-1.99-7.79-2.57-11.44-1.41-.48.147-.99-.144-1.137-.624-.147-.48.144-.99.624-1.137 4.09-1.27 9.2-.63 12.58 1.55.43.28.565.873.285 1.304zm.157-3.7c-3.54-2.14-9.36-2.33-12.86-1.28-.57.18-1.18-.15-1.36-.72-.18-.57.15-1.18.72-1.36 3.86-1.23 10.16-1 14.05 1.44.55.34.73 1.07.39 1.62-.34.55-1.07.73-1.62.39z"/>
-                    </svg>
-                </a>
-                <span class="mt-2 text-emerald-400 text-sm">Spotify</span>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <footer class="p-3 text-center text-gray-500 border-t border-gray-800">
             Made with ☕ using Laravel & TailwindCSS
@@ -370,6 +443,28 @@ window.addEventListener("scroll", () => {
         behavior: 'smooth'
         });
     });
+    });
+
+    const showMoreBtn = document.getElementById("showMoreBtn");
+    const extraCerts = document.querySelectorAll(".extra-cert");
+    let isExpanded = false;
+
+    showMoreBtn.addEventListener("click", () => {
+        isExpanded = !isExpanded;
+        extraCerts.forEach((cert, index) => {
+            if (isExpanded) {
+                cert.classList.remove("hidden");
+                setTimeout(() => {
+                    cert.classList.remove("opacity-0", "translate-y-4");
+                }, 50 + index * 100); // delay sedikit biar efek stagger muncul
+            } else {
+                cert.classList.add("opacity-0", "translate-y-4");
+                setTimeout(() => {
+                    cert.classList.add("hidden");
+                }, 700); // tunggu animasi selesai dulu baru hidden
+            }
+        });
+        showMoreBtn.textContent = isExpanded ? "Show Less" : "Show More";
     });
 
 </script>
