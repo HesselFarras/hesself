@@ -208,7 +208,7 @@
         </section>
 
         <!-- ===== Certificates ===== -->
-        <section id="certificates" class="px-6 md:px-10 py-12 border-t border-gray-800">
+        <section id="certificates" class="px-6 md:px-10 py-8 border-t border-gray-800">
             <h2 class="text-xl font-bold mb-6 text-emerald-400">Certificates</h2>
 
             <!-- Grid Sertifikat -->
