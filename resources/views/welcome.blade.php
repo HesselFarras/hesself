@@ -209,11 +209,16 @@
         </section>
 
         <!-- ===== Certificates ===== -->
+<<<<<<< HEAD
         <section id="certificates" class="px-6 md:px-10 py-12 border-t border-gray-800">
+=======
+        <section id="certificates" class="px-6 md:px-10 py-8 border-t border-gray-800">
+>>>>>>> 76da0b3f0866dd3930dabe6060241faa6ee75295
             <h2 class="text-xl font-bold mb-6 text-emerald-400">Certificates</h2>
 
             <!-- Grid Sertifikat -->
             <div id="certificateGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<<<<<<< HEAD
                 <div class="group cursor-pointer"
                     onclick="openModal('/images/serti5.png','Operating System')">
                     <div class="relative">
@@ -224,6 +229,8 @@
                     <p class="text-sm text-gray-400">2025</p>
                 </div>
 
+=======
+>>>>>>> 76da0b3f0866dd3930dabe6060241faa6ee75295
                 <!-- Sertifikat 1 -->
                 <div class="group cursor-pointer"
                     onclick="openModal('/images/serti2.png','Fullstack Developer')">
@@ -478,4 +485,8 @@ window.addEventListener("scroll", () => {
         showMoreBtn.textContent = isExpanded ? "Show Less" : "Show More";
     });
 
+<<<<<<< HEAD
 </script>
+=======
+</script>
+>>>>>>> 76da0b3f0866dd3930dabe6060241faa6ee75295
