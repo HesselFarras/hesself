@@ -33,7 +33,7 @@
     <aside id="sidebar"
     class="fixed top-0 left-0 w-64 md:w-64 h-screen bg-[#121212] flex flex-col border-r border-gray-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 pt-16 md:pt-0">
         <!-- ↑ pt-16 memberi ruang agar teks tidak tertutup hamburger di mobile -->
-        <a href="#photo" class="px-5 pb-5 text-2xl mt-8 font-bold text-emerald-500">Hello there👋</a>
+        <a href="#profile" class="px-5 pb-5 text-2xl mt-8 font-bold text-emerald-500">Hello there👋</a>
 
         <nav class="flex-1 overflow-y-auto px-4 space-y-2">
             <a href="#about" class="block px-3 py-2 rounded hover:bg-gray-800">About</a>
@@ -42,6 +42,7 @@
             <a href="#skills" class="block px-3 py-2 rounded hover:bg-gray-800">Skills</a>
             <a href="#certificates" class="block px-3 py-2 rounded hover:bg-gray-800">Certificates</a>
             <a href="#contact" class="block px-3 py-2 rounded hover:bg-gray-800">Contact</a>
+            <!-- <a href="denim" class="block px-3 py-2 rounded hover:bg-gray-800">Denim</a> -->
         </nav>
 
         <footer class="p-4 text-xs text-gray-400 border-t border-gray-700">
@@ -213,6 +214,16 @@
 
             <!-- Grid Sertifikat -->
             <div id="certificateGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti5.png','Operating System')">
+                    <div class="relative">
+                        <img src="/images/serti5.png" alt="Certificate 5"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Operating System</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
                 <!-- Sertifikat 1 -->
                 <div class="group cursor-pointer"
                     onclick="openModal('/images/serti2.png','Fullstack Developer')">
