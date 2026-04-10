@@ -215,6 +215,46 @@
             <!-- Grid Sertifikat -->
             <div id="certificateGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti6.png','Linux Essentials')">
+                    <div class="relative">
+                        <img src="/images/serti6.png" alt="Certificate 6"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">Linux Essentials</h3>
+                    <p class="text-sm text-gray-400">2026</p>
+                </div>
+
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti9.png','RedHat Administration 3')">
+                    <div class="relative">
+                        <img src="/images/serti9.png" alt="Certificate 9"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">RedHat Administration 3</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
+                <div class="group cursor-pointer"
+                    onclick="openModal('/images/serti7.png','RedHat Administration 2')">
+                    <div class="relative">
+                        <img src="/images/serti7.png" alt="Certificate 7"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">RedHat Administration 2</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
+                <div class="group cursor-pointer hidden extra-cert opacity-0 translate-y-4 transition-all duration-700"
+                    onclick="openModal('/images/serti8.png','RedHat Administration 1')">
+                    <div class="relative">
+                        <img src="/images/serti8.png" alt="Certificate 8"
+                            class="rounded-md shadow-md w-full aspect-video object-cover">
+                    </div>
+                    <h3 class="mt-3 font-semibold text-white truncate">RedHat Administration 1</h3>
+                    <p class="text-sm text-gray-400">2025</p>
+                </div>
+
+                <div class="group cursor-pointer hidden extra-cert opacity-0 translate-y-4 transition-all duration-700"
                     onclick="openModal('/images/serti5.png','Operating System')">
                     <div class="relative">
                         <img src="/images/serti5.png" alt="Certificate 5"
@@ -223,11 +263,10 @@
                     <h3 class="mt-3 font-semibold text-white truncate">Operating System</h3>
                     <p class="text-sm text-gray-400">2025</p>
                 </div>
-
                 
                 
                 <!-- Sertifikat 3 -->
-                <div class="group cursor-pointer"
+                <div class="group cursor-pointer hidden extra-cert opacity-0 translate-y-4 transition-all duration-700"
                 onclick="openModal('/images/serti4.png','Dasar AI Engineering')">
                 <div class="relative">
                     <img src="/images/serti4.png" alt="Certificate 3"
@@ -238,7 +277,7 @@
             </div>
             
             <!-- Sertifikat 2 -->
-            <div class="group cursor-pointer"
+            <div class="group cursor-pointer hidden extra-cert opacity-0 translate-y-4 transition-all duration-700"
                 onclick="openModal('/images/serti3.png','Flutter')">
                 <div class="relative">
                     <img src="/images/serti3.png" alt="Certificate 2"
@@ -268,18 +307,6 @@
                     <h3 class="mt-3 font-semibold text-white truncate">Kuliah umum bersama RedHat Indonesia</h3>
                     <p class="text-sm text-gray-400">2024</p>
                 </div>
-
-
-                <!-- Sertifikat 5 (Hidden Default) -->
-                <!-- <div class="group cursor-pointer hidden extra-cert"
-                    onclick="openModal('/images/certificate5.png','Git & GitHub Certificate')">
-                    <div class="relative">
-                        <img src="/images/certificate5.png" alt="Certificate 5"
-                            class="rounded-md shadow-md w-full aspect-video object-cover">
-                    </div>
-                    <h3 class="mt-3 font-semibold text-white truncate">Git & GitHub</h3>
-                    <p class="text-sm text-gray-400">2024</p>
-                </div> -->
             </div>
 
             <!-- Tombol Show More -->
